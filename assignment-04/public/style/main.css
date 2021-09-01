@@ -1,0 +1,67 @@
+:root {
+    --light-blue: #93bee6; 
+    --dark-blue: #05294a;
+    --blue: #326fa8; 
+}
+
+body {
+    display: grid; 
+    place-items: center center;
+    height: 100vh; 
+    background-color: var(--blue); 
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+}
+
+.container {
+    display: grid; 
+    grid-template-areas:
+        "title"
+        "username"
+        "password"
+        "loginButton"
+        "dataButton";   
+
+    width: 500px;
+    grid-gap: 10px;
+}
+
+input, button {
+    font-size: 1.4em;
+    padding: 10px;
+    background-color: var(--light-blue);
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue); 
+}
+
+::placeholder {
+    color: var(--dark-blue);
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+#title {
+    grid-area: title; 
+    color: var(--dark-blue);
+    justify-self: center;
+}
+
+#usernameField {
+    grid-area: username; 
+}
+
+#passwordField {
+    grid-area: password; 
+}
+
+#loginButton {
+    grid-area: loginButton; 
+}
+
+#dataButton {
+    grid-area: dataButton; 
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tulleposten</title>
+
+        <link rel="stylesheet" href="../style/main.css" />
+        <link rel="stylesheet" href="../style/register.css" />
+
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/livefeed.js"></script>
+        <script src="../js/register.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <img class="logo" src="../images/logo.svg" onclick="location.href='../index.html'" />
+                <button class="button-news" onclick="location.href='/pages/news.html'">NYHETER</button>
+                <button class="button-kultur" onclick="location.href='/pages/culture.html'">KULTUR</button>
+                <button class="button-sport" onclick="location.href='/pages/sport.html'">SPORT</button>
+                <button class="button-kjendis" onclick="location.href='/pages/celeb.html'">KJENDIS</button>
+                <button class="button-registrer" onclick="location.href='/pages/register.html'">REGISTRER SAK</button>
+            </div>
+
+            <marquee class="livefeed" behavior="scroll" direction="left">&nbsp</marquee>
+
+            <div class="content">
+                <select class="article-picker" name="article-picker">
+                    <option value="-1">Ny sak</option>
+                </select>
+
+                <input class="title" type="text" placeholder="Tittel" />
+                <textarea class="text" placeholder="Tekst"></textarea>
+                <input class="image" type="text" placeholder="Bilde" />
+
+                <select class="category" name="category">
+                    <option value="">Kategori</option>
+                    <option value="news">Nyheter</option>
+                    <option value="culture">Kultur</option>
+                    <option value="sport">Sport</option>
+                    <option value="celeb">Kjendis</option>
+                </select>
+
+                <div class="priority"><label>Prioriter</label> <input class="checkbox" type="checkbox" /></div>
+
+                <div class="button-container">
+                    <button class="button-register">Registrer sak</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p class="adress">Tulleveien 8, 7019 Tullheim</p>
+                <p class="copyright">© Håkon Harnes</p>
+                <p class="phone">+4712345678</p>
+            </div>
+        </div>
+    </body>
+</html>

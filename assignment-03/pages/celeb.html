@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tulleposten</title>
+
+        <link rel="stylesheet" href="../style/main.css" />
+        <link rel="stylesheet" href="../style/index.css" />
+
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/livefeed.js"></script>
+        <script src="../js/category.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <img class="logo" src="../images/logo.svg" onclick="location.href='../index.html'"/>
+                <button class="button-news" onclick="location.href='/pages/news.html'">NYHETER</button>
+                <button class="button-kultur" onclick="location.href='/pages/culture.html'">KULTUR</button>
+                <button class="button-sport" onclick="location.href='/pages/sport.html'">SPORT</button>
+                <button class="button-kjendis" onclick="location.href='/pages/celeb.html'">KJENDIS</button>
+                <button class="button-registrer" onclick="location.href='/pages/register.html'">REGISTRER SAK</button>
+            </div>
+
+            <marquee class="livefeed" behavior="scroll" direction="left">&nbsp</marquee>
+
+            <div class="content"></div>
+
+            <div class="footer">
+                <p class="adress">Tulleveien 8, 7019 Tullheim</p>
+                <p class="copyright">© Håkon Harnes</p>
+                <p class="phone">+4712345678</p>
+            </div>
+        </div>
+
+        <script>
+            getArticles('celeb'); 
+        </script>
+    </body>
+</html>

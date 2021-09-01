@@ -1,0 +1,64 @@
+.content {
+    font-family: 'Austin Deck', 'Liberation Serif', 'Times New Roman', Times, serif;
+    margin: 30px auto 30px auto;
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-areas:
+        'image'
+        'title'
+        'text'
+        'comment-title'
+        'nickname-input'
+        'comment-input'
+        'button-submit'
+        'comment-wrapper';
+    grid-gap: 10px;
+}
+
+.title {
+    grid-area: title;
+    font-size: 4.5em;
+}
+
+.image-wrapper {
+    grid-area: image;
+    max-height: 850px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+}
+
+.text {
+    grid-area: text;
+}
+
+.comment-title {
+    grid-area: comment-title;
+}
+
+.nickname-input {
+    grid-area: nickname-input;
+    height: 40px;
+}
+
+.comment-input {
+    grid-area: comment-input;
+}
+
+.button-submit {
+    grid-area: button-submit;
+    height: 40px;
+}
+
+.comment-wrapper {
+    display: grid;
+    grid-area: comment-wrapper;
+    grid-gap: 10px;
+}
+
+.comment {
+    padding: 12px;
+    margin: 0;
+}

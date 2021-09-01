@@ -1,0 +1,47 @@
+:root {
+    --color: #eee; 
+}
+
+body {
+    margin: 0; 
+    background-color: var(--color);
+}
+
+.container {
+    height: 100vh;
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.input {
+    width: 60vw;
+    height: 50px;
+    padding-left: 15px;
+    grid-row: 1;
+    align-self: end;
+}
+
+::placeholder {
+    color: black;
+}
+
+.submit-button {
+    height: 50px;
+    width: 150px;
+    grid-row: 2;
+    align-self: start;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.pretty {
+    background-color: var(--color); 
+    border: none;
+    filter: brightness(140%);
+    font-size: 1.4em;
+    outline: 0;
+}

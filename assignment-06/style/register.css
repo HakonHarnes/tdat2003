@@ -1,0 +1,69 @@
+.content {
+    margin: 30px auto 30px auto;
+    width: 90%;
+    max-width: 800px; 
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(2, 40px) 1fr repeat(3, 40px); 
+    grid-gap: 10px;
+    grid-template-areas: 
+    "article-picker   article-picker"
+    "title            title"
+    "text             text"
+    "image            image "
+    "category         priority"
+    "button-container button-container";
+}
+
+
+.article-picker {
+    grid-area: article-picker; 
+}
+
+.title {
+    grid-area: title;
+}
+
+.text {
+    grid-area: text;
+    min-height: 200px;
+}
+
+.image {
+    grid-area: image; 
+}
+
+.category {
+    grid-area: category; 
+}
+
+.priority {
+    grid-area: priority;
+    display: grid; 
+    border: none;
+    grid-template-columns: 3fr 1fr; 
+    grid-template-areas: "label checkbox"; 
+    place-items: center center;
+    grid-gap: 10px;
+}
+
+label {
+    grid-area: label; 
+}
+
+.checkbox {
+    grid-area: checkbox; 
+}
+
+.button-container {
+    grid-area: button-container;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-areas: "button-register button-delete";  
+    padding: 0;
+    border: none; 
+}
+
+.button-register {
+    grid-area: button-register; 
+}
